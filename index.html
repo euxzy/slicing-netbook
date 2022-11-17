@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/css/styles.css" />
+    <link rel="icon" href="./src/images/icon/logo.svg" type="image/x-icon" />
+    <title>Netbook</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <section id="header" class="fixed top-0 z-50 w-full border-b border-blue/10 bg-white md:bg-transparent md:backdrop-blur-md">
+      <div class="container px-5 lg:px-0">
+        <nav class="relative flex items-center justify-between py-4.5">
+          <a href="/" class="flex items-center gap-1.5 transition-all duration-300 hover:-translate-y-0.5">
+            <img src="./src/images/icon/logo.svg" alt="Netbook" />
+            <h1 class="font-poppins text-2xl font-semibold">Netbook</h1>
+          </a>
+
+          <div id="hamburger-menu" class="flex h-4.5 flex-col justify-between md:hidden">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+
+          <div
+            id="nav-menu"
+            class="hide-nav absolute top-20 flex w-full flex-col gap-4 rounded-xl bg-white/50 py-5 backdrop-blur-md transition-all duration-500 md:relative md:inset-0 md:w-max md:flex-row md:gap-11 md:rounded-none md:bg-transparent md:py-0 md:opacity-100 lg:gap-[379px]"
+          >
+            <ul class="flex flex-col items-center gap-4 text-sm text-gray md:flex-row lg:gap-8">
+              <li><a href="/" class="font-semibold text-[#2B2B39]">Home</a></li>
+              <li>
+                <a href="#" class="flex items-center gap-[5px]"
+                  >Community <span><img src="./src/images/icon/mark-down.svg" alt="mark-down" /></span
+                ></a>
+              </li>
+              <li><a href="#blog">Blog</a></li>
+              <li><a href="/events">Events</a></li>
+            </ul>
+
+            <form action="" class="relative flex flex-col items-center gap-4 text-xs md:flex-row md:items-end lg:gap-[42px]">
+              <input
+                type="text"
+                name="search"
+                id="search"
+                placeholder="Search Here..."
+                class="border-b border-[#E5E5E5] bg-transparent pl-24 pb-4.5 outline-none transition-all duration-300 placeholder:text-[#686868] hover:-translate-y-0.5 focus:-translate-y-0.5 md:w-[105px] md:pl-5"
+              />
+              <img src="./src/images/icon/search.svg" alt="search" class="absolute inset-0 mt-0.5 ml-[108px] md:ml-0 md:mt-4.5" />
+
+              <a href="#" class="rounded-14 bg-blue py-4.5 px-11 font-semibold text-white transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-blue/30">Log in</a>
+            </form>
+          </div>
+        </nav>
+      </div>
+    </section>
+
+    <!-- Hero -->
+    <section id="hero" class="bg-gradient-to-br from-white to-[#D4E7FE] pb-[82.5px] pt-[162px]">
+      <div class="container flex flex-col-reverse items-center justify-between gap-20 px-5 lg:flex-row lg:px-0">
+        <div class="md:flex md:w-9/12 md:flex-col md:items-center md:justify-center lg:relative lg:w-[43%] lg:items-start">
+          <a href="" class="mb-5 inline-block rounded-lg bg-blue/10 py-3 px-30 font-medium text-blue transition-all duration-500 hover:bg-blue/60 hover:text-white">Netbook community</a>
+          <h1 class="mb-4.5 text-5xl font-bold leading-[66px] text-navy md:text-center md:text-[56px] lg:text-left">Your Solutions For Community!</h1>
+          <p class="mb-[42px] text-lg text-gray md:text-center lg:text-left">More than 2 billion people in over countries use socibook to stay in touch with friends & family.</p>
+          <div class="flex flex-col gap-4.5 md:flex-row">
+            <a href="#" class="btn flex items-center justify-center bg-blue text-white drop-shadow-[0_4px_4px_rgba(0,0,0,0.25)] transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-blue/30">About More</a>
+            <a href="#" class="btn flex items-center justify-center border border-blue font-medium text-blue transition-all duration-300 hover:-translate-y-1 hover:bg-blue hover:text-white hover:shadow-lg hover:shadow-blue/30">
+              Invite Friend
+            </a>
+          </div>
+        </div>
+
+        <div class="">
+          <img src="./src/images/hero-img.png" alt="Community" />
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="mt-24">
+      <div class="container flex flex-col items-center justify-between gap-20 px-5 py-[34px] lg:flex-row lg:px-0">
+        <div class="md:w-[550px] lg:w-[406px]">
+          <p class="mb-2.5 text-lg font-medium text-blue md:text-center lg:text-left">Whats Netboks?</p>
+          <h2 class="mb-4 text-4xl font-bold text-navy md:text-center lg:text-left">Why Join to Netbook Social Network?</h2>
+          <p class="mb-9 text-gray md:text-center lg:text-left">Recent surveys have indicated that small businesses recognise the need they have to connect with consumer.</p>
+          <ul class="relative flex justify-evenly text-lg font-medium text-[#171648] lg:block lg:w-max">
+            <li class="li-before">Groups</li>
+            <li class="li-before">Messages</li>
+            <li class="li-before">Share</li>
+          </ul>
+        </div>
+
+        <div class="flex gap-6">
+          <div class="flex items-center">
+            <div class="rounded-2xl">
+              <img src="./src/images/about-img-1.png" alt="About Images" class="transition-all duration-300 hover:scale-110" />
+            </div>
+          </div>
+          <div class="flex flex-col gap-6">
+            <div class="rounded-2xl">
+              <img src="./src/images/about-img-2.png" alt="About Images" class="transition-all duration-300 hover:scale-110" />
+            </div>
+            <div class="rounded-2xl">
+              <img src="./src/images/about-img-3.png" alt="About Images" class="transition-all duration-300 hover:scale-110" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Achievement -->
+    <section id="achievement" class="mt-[21px]">
+      <div class="container flex flex-col-reverse gap-[93px] py-[84px] px-5 md:items-center lg:flex-row lg:px-0">
+        <div class="flex flex-col gap-6 md:flex-row">
+          <div class="group cursor-pointer rounded-14 pt-[42px] pb-10 pl-11 pr-4.5 shadow-md transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
+            <div class="mb-8 flex items-center gap-2.5">
+              <img src="./src/images/icon/star.svg" alt="Star" />
+              <p class="text-xl font-medium text-navy">4.8 Rating</p>
+            </div>
+            <div class="flex gap-[52px]">
+              <div class="relative">
+                <img src="./src/images/profile-1.png" alt="Profile" class="w-6 rounded-full border border-white" />
+                <img src="./src/images/profile-2.png" alt="Profile" class="absolute top-0 left-4.5 w-6 rounded-full border border-white" />
+                <img src="./src/images/profile-3.png" alt="Profile" class="absolute top-0 left-9 w-6 rounded-full border border-white" />
+              </div>
+              <p class="text-base font-medium text-[#5D5B70]"><span class="font-semibold text-blue">+836k</span> Members</p>
+            </div>
+            <p class="my-10 text-[#8C8C8C]">More than 2 billion we people over countries use socibooks we to stay in touch with friends.</p>
+            <a href="#" class="flex w-max items-center gap-2 font-medium text-[#4A4A56] transition-all duration-300 group-hover:gap-5 group-hover:text-blue">
+              <span>Join Our Community</span>
+              <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="group-hover:stroke-blue" d="M1.5625 5H8.4375" stroke="#4A4A56" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+                <path class="group-hover:stroke-blue" d="M5.625 2.1875L8.4375 5L5.625 7.8125" stroke="#4A4A56" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </a>
+          </div>
+
+          <div class="group cursor-pointer rounded-14 pt-[42px] pb-10 pl-11 pr-4.5 shadow-md transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
+            <div class="mb-8 flex items-center gap-2.5">
+              <img src="./src/images/icon/trophy.svg" alt="Trophy" />
+              <p class="text-xl font-medium text-navy">Awwwards</p>
+            </div>
+            <div class="flex gap-4">
+              <img src="./src/images/github-red.png" alt="Github" class="w-6 rounded-full border border-white" />
+              <p class="text-base font-medium text-[#5D5B70]">Best of <span class="font-semibold text-blue">2021</span> on Github</p>
+            </div>
+            <p class="my-10 text-[#8C8C8C]">More than 2 billion we people over countries use socibooks we to stay in touch with friends.</p>
+            <a href="#" class="flex w-max items-center gap-2 font-medium text-[#4A4A56] transition-all duration-300 group-hover:gap-5 group-hover:text-blue">
+              <span>Go To Awards</span>
+              <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="group-hover:stroke-blue" d="M1.5625 5H8.4375" stroke="#4A4A56" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+                <path class="group-hover:stroke-blue" d="M5.625 2.1875L8.4375 5L5.625 7.8125" stroke="#4A4A56" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="md:w-[600px] lg:w-max">
+          <p class="mb-2.5 text-lg font-semibold text-blue md:text-center lg:text-left">Our Achievement</p>
+          <h2 class="mb-4.5 text-4xl font-bold text-navy md:text-center lg:text-left">We are Connecting You The Digital Life.</h2>
+          <p class="mb-[38px] text-base text-gray md:text-center lg:text-left">The scope the Social Media becomes crucial Is helps the business to directly engage with their needs and wants.</p>
+          <a
+            href="#"
+            class="group flex w-max items-center gap-5 rounded-14 bg-blue px-[38px] py-[21px] text-white shadow-lg shadow-blue/25 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-blue/30 md:mx-auto lg:mx-0"
+          >
+            <span>Discover me</span>
+            <svg class="inline-block transition-all duration-300 group-hover:translate-x-3" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M2.5 8H13.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M9 3.5L13.5 8L9 12.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Community -->
+    <section id="community" class="mt-[55px] bg-gradient-to-b from-transparent via-[#F1F6FD] to-white">
+      <div class="container px-5 pt-[60px] pb-[126px] lg:px-0">
+        <div class="mb-16 flex flex-col items-center">
+          <p class="mb-[9px] text-lg font-medium text-blue">Our Community</p>
+          <h2 class="mb-[19px] text-center text-4xl font-bold text-navy">Community Main Feature</h2>
+          <p class="text-center text-gray lg:w-[421px]">The wise man therefore always holds in these matters to this principle of selection.</p>
+        </div>
+
+        <div class="flex flex-wrap justify-center gap-11">
+          <div class="community-card group">
+            <div class="flex h-16.5 w-16.5 items-center justify-center rounded-3xl bg-gradient-to-br from-[#5CA1FE] to-blue shadow-xl transition-all duration-300 group-hover:shadow-blue/30">
+              <img src="./src/images/icon/friends.svg" alt="Friends" />
+            </div>
+            <div class="md:w-450 lg:w-[315px]">
+              <h4 class="mb-3.5 text-center text-2xl font-semibold text-[#2F2C4A] lg:text-left">Members, Friends</h4>
+              <p class="text-center text-gray lg:text-left">Members, Friends Connection ( like followers ), Private Message</p>
+            </div>
+          </div>
+
+          <div class="community-card group">
+            <div class="flex h-16.5 w-16.5 items-center justify-center rounded-3xl bg-gradient-to-br from-[#FF858A] to-[#F04148] shadow-xl transition-all duration-300 group-hover:shadow-[#F04148]/30">
+              <img src="./src/images/icon/groups.svg" alt="Groups" />
+            </div>
+            <div class="md:w-450 lg:w-[315px]">
+              <h4 class="mb-3.5 text-center text-2xl font-semibold text-[#2F2C4A] lg:text-left">Groups</h4>
+              <p class="text-center text-gray lg:text-left">Your users can create groups to let other users to join and talk</p>
+            </div>
+          </div>
+
+          <div class="community-card group">
+            <div class="flex h-16.5 w-16.5 items-center justify-center rounded-3xl bg-gradient-to-br from-[#FFD085] to-[#FFAF2E] shadow-xl transition-all duration-300 group-hover:shadow-[#FFAF2E]/30">
+              <img src="./src/images/icon/forum.svg" alt="Forum" />
+            </div>
+            <div class="md:w-450 lg:w-[315px]">
+              <h4 class="mb-3.5 text-center text-2xl font-semibold text-[#2F2C4A] lg:text-left">Forum</h4>
+              <p class="text-center text-gray lg:text-left">Forum is ready by BBPress. Your users can make topics and talk.</p>
+            </div>
+          </div>
+
+          <div class="community-card group lg:pb-4.5">
+            <div class="flex h-16.5 w-16.5 items-center justify-center rounded-3xl bg-gradient-to-br from-[#5CA1FE] to-blue shadow-xl transition-all duration-300 group-hover:shadow-blue/30">
+              <img src="./src/images/icon/module.svg" alt="Custom Module" />
+            </div>
+            <div class="md:w-450 lg:w-[315px]">
+              <h4 class="mb-3.5 text-center text-2xl font-semibold text-[#2F2C4A] lg:text-left">Custom Module</h4>
+              <p class="text-center text-gray lg:text-left">You can create Members, Groups Module. We already created 3 modules. It's by drag & drop live builder.</p>
+            </div>
+          </div>
+
+          <div class="community-card group">
+            <div class="flex h-16.5 w-16.5 items-center justify-center rounded-3xl bg-gradient-to-br from-[#FF858A] to-[#F04148] shadow-xl transition-all duration-300 group-hover:shadow-[#F04148]/30">
+              <img src="./src/images/icon/list-builder.svg" alt="List Builder" />
+            </div>
+            <div class="md:w-450 lg:w-[315px]">
+              <h4 class="mb-3.5 text-center text-2xl font-semibold text-[#2F2C4A] lg:text-left">List Builder</h4>
+              <p class="text-center text-gray lg:text-left">Members, Groups list can be modified by drag & drop live builder.</p>
+            </div>
+          </div>
+
+          <div class="community-card group">
+            <div class="flex h-16.5 w-16.5 items-center justify-center rounded-3xl bg-gradient-to-br from-[#FFD085] to-[#FFAF2E] shadow-xl transition-all duration-300 group-hover:shadow-[#FFAF2E]/30">
+              <img src="./src/images/icon/list-scroll.svg" alt="List Scroll" />
+            </div>
+            <div class="md:w-450 lg:w-[315px]">
+              <h4 class="mb-3.5 text-center text-2xl font-semibold text-[#2F2C4A] lg:text-left">List Scroll Effects</h4>
+              <p class="text-center text-gray lg:text-left">8 different scroll effects are ready. You can always change by your tastes.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Members -->
+    <section id="members">
+      <div class="container py-[84px] px-5 lg:px-0">
+        <div class="mb-11 flex flex-col items-center">
+          <p class="mb-2.5 text-lg font-medium text-blue">Valuable Team</p>
+          <h2 class="mb-4.5 text-center text-4xl font-bold text-navy">Our Active Members</h2>
+          <p class="mb-[38px] text-center text-gray lg:w-[454px]">when an unknown printer took a galley of type and meeting fari scrambled it.</p>
+          <ul class="flex w-full flex-col gap-1 rounded-14 bg-blue/10 p-2 font-medium text-[#2F2C4A] md:w-max md:flex-row">
+            <li class="flex cursor-pointer items-center justify-center rounded-14 py-5 px-[50px] transition-all duration-300 hover:bg-blue hover:text-white">Newst</li>
+            <li class="flex cursor-pointer items-center justify-center rounded-14 py-5 px-[50px] transition-all duration-300 hover:bg-blue hover:text-white">Popular</li>
+            <li class="flex cursor-pointer items-center justify-center rounded-14 bg-blue py-5 px-[50px] text-white">Active</li>
+          </ul>
+        </div>
+
+        <div class="flex flex-col gap-10 md:flex-row md:flex-wrap md:justify-center lg:justify-between lg:gap-0">
+          <div class="member-card group">
+            <div class="relative md:mb-[34px]">
+              <img src="./src/images/dashed-circle.svg" alt="Dashed Circle" class="inline-block transition-all duration-700 group-hover:animate-pulse" />
+
+              <img src="./src/images/member-1.png" alt="Member" class="absolute inset-0 m-auto rounded-full bg-blue/10" />
+              <img src="./src/images/icon/check.svg" alt="Check" class="absolute inset-x-0 -bottom-0.5 mx-auto inline-block transition-all duration-700 group-hover:animate-bounce" />
+            </div>
+            <div class="flex flex-col md:items-center">
+              <h4 class="mb-3.5 text-lg font-medium text-[#2F2C4A] md:text-2xl">Fahim Rahman</h4>
+              <p class="text-gray">@rahman</p>
+            </div>
+          </div>
+
+          <div class="member-card group">
+            <div class="relative md:mb-[34px]">
+              <img src="./src/images/dashed-circle.svg" alt="Dashed Circle" class="inline-block transition-all duration-700 group-hover:animate-pulse" />
+
+              <img src="./src/images/member-2.png" alt="Member" class="absolute inset-0 m-auto rounded-full bg-blue/10" />
+              <img src="./src/images/icon/check.svg" alt="Check" class="absolute inset-x-0 -bottom-0.5 mx-auto inline-block transition-all duration-700 group-hover:animate-bounce" />
+            </div>
+            <div class="flex flex-col md:items-center">
+              <h4 class="mb-3.5 text-lg font-medium text-[#2F2C4A] md:text-2xl">Kazi Rahman</h4>
+              <p class="text-gray">@Rahman</p>
+            </div>
+          </div>
+
+          <div class="member-card group">
+            <div class="relative md:mb-[34px]">
+              <img src="./src/images/dashed-circle.svg" alt="Dashed Circle" class="inline-block transition-all duration-700 group-hover:animate-pulse" />
+
+              <img src="./src/images/member-3.png" alt="Member" class="absolute inset-0 m-auto rounded-full bg-blue/10" />
+              <img src="./src/images/icon/check.svg" alt="Check" class="absolute inset-x-0 -bottom-0.5 mx-auto inline-block transition-all duration-700 group-hover:animate-bounce" />
+            </div>
+            <div class="flex flex-col md:items-center">
+              <h4 class="mb-3.5 text-lg font-medium text-[#2F2C4A] md:text-2xl">Masterero Ali</h4>
+              <p class="text-gray">@Master</p>
+            </div>
+          </div>
+
+          <div class="member-card group">
+            <div class="relative md:mb-[34px]">
+              <img src="./src/images/dashed-circle.svg" alt="Dashed Circle" class="inline-block transition-all duration-700 group-hover:animate-pulse" />
+
+              <img src="./src/images/member-4.png" alt="Member" class="absolute inset-0 m-auto rounded-full bg-blue/10" />
+              <img src="./src/images/icon/check.svg" alt="Check" class="absolute inset-x-0 -bottom-0.5 mx-auto inline-block transition-all duration-700 group-hover:animate-bounce" />
+            </div>
+            <div class="flex flex-col md:items-center">
+              <h4 class="mb-3.5 text-lg font-medium text-[#2F2C4A] md:text-2xl">Alia Karon</h4>
+              <p class="text-gray">@Alia</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Download -->
+    <section id="download" class="mb-24 bg-[#E5F0FD]">
+      <div class="container flex flex-col items-center justify-between gap-20 px-5 pt-20 lg:flex-row lg:px-0 lg:pt-6">
+        <div class="md:flex md:flex-col md:items-center lg:block lg:w-[351px]">
+          <p class="mb-2.5 text-lg font-medium text-blue">Get Our Aplication</p>
+          <h2 class="mb-4.5 text-4xl font-bold text-navy">You Can Easily Find This App…!</h2>
+          <p class="mb-9 text-gray md:w-450 lg:w-[341px]">I say chap that's suing lavatory chip shop gosh off his smashing boot are you taking the piss posh loo brilliant.</p>
+          <div class="flex items-center gap-5">
+            <a href="#" class="transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-blue/10"><img src="./src/images/appstore.png" alt="Appstore" /></a>
+            <a href="#" class="transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-blue/10"><img src="./src/images/playstore.png" alt="Playstore" /></a>
+          </div>
+        </div>
+        <div class="w-96 overflow-hidden md:w-[650px] lg:w-full">
+          <img src="./src/images/mobile.png" alt="Mobile Download" class="inline-block w-full scale-110 transition-all duration-300 hover:-translate-y-2.5 hover:drop-shadow-3xl" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Blog -->
+    <section id="blog" class="mb-24">
+      <div class="container px-5 pt-[34px] pb-[34px] lg:px-0">
+        <div class="mb-20 text-center">
+          <p class="mb-2.5 text-lg font-medium text-blue">Get Our Aplication</p>
+          <h2 class="text-4xl font-bold text-navy">Latest News</h2>
+        </div>
+
+        <div class="relative flex flex-col items-center gap-[75px] md:flex-row md:flex-wrap md:justify-evenly">
+          <div class="absolute left-0 -top-6 -z-10 lg:-left-12">
+            <img src="./src/images/union.svg" alt="" />
+          </div>
+          <div class="absolute right-0 bottom-48 -z-10 lg:-right-12">
+            <img src="./src/images/union.svg" alt="" />
+          </div>
+
+          <div class="group w-72 cursor-pointer lg:w-340">
+            <div class="mb-[25px] overflow-hidden rounded-3xl">
+              <img src="./src/images/blog-img-1.png" alt="Blog Image" class="inline-block transition-all duration-300 group-hover:rotate-12 group-hover:scale-125" />
+            </div>
+            <div class="relative pl-16">
+              <p class="line-before mb-6 text-xl font-semibold text-[#2F2C4A]">It Does Not Matter Hows Slowly go as Long</p>
+              <p class="flex items-center gap-2 text-gray transition-all duration-300 group-hover:gap-5 group-hover:text-blue">
+                <span>Continue Reading</span>
+                <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path class="group-hover:stroke-blue" d="M1.5625 5H8.4375" stroke="#656464" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+                  <path class="group-hover:stroke-blue" d="M5.625 2.1875L8.4375 5L5.625 7.8125" stroke="#656464" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </p>
+            </div>
+          </div>
+
+          <div class="group w-72 cursor-pointer lg:w-340">
+            <div class="mb-[25px] overflow-hidden rounded-3xl">
+              <img src="./src/images/blog-img-2.png" alt="Blog Image" class="inline-block transition-all duration-300 group-hover:rotate-12 group-hover:scale-125" />
+            </div>
+            <div class="relative pl-16">
+              <p class="line-before mb-6 text-xl font-semibold text-[#2F2C4A]">Netbook Network Added New Photo Filter</p>
+              <p class="flex items-center gap-2 text-gray transition-all duration-300 group-hover:gap-5 group-hover:text-blue">
+                <span>Continue Reading</span>
+                <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path class="group-hover:stroke-blue" d="M1.5625 5H8.4375" stroke="#656464" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+                  <path class="group-hover:stroke-blue" d="M5.625 2.1875L8.4375 5L5.625 7.8125" stroke="#656464" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </p>
+            </div>
+          </div>
+
+          <div class="group w-72 cursor-pointer lg:w-340">
+            <div class="mb-[25px] overflow-hidden rounded-3xl">
+              <img src="./src/images/blog-img-3.png" alt="Blog Image" class="inline-block transition-all duration-300 group-hover:rotate-12 group-hover:scale-125" />
+            </div>
+            <div class="relative pl-16">
+              <p class="line-before mb-6 text-xl font-semibold text-[#2F2C4A]">We Optimised Netbooks Better Navigation</p>
+              <p class="flex items-center gap-2 text-gray transition-all duration-300 group-hover:gap-5 group-hover:text-blue">
+                <span>Continue Reading</span>
+                <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path class="group-hover:stroke-blue" d="M1.5625 5H8.4375" stroke="#656464" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+                  <path class="group-hover:stroke-blue" d="M5.625 2.1875L8.4375 5L5.625 7.8125" stroke="#656464" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <section id="footer" class="bg-[#2B2B39] text-[#e7e7e7]">
+      <div class="container flex flex-col justify-between gap-20 px-5 pt-[78px] pb-[85px] lg:flex-row lg:gap-0 lg:px-0">
+        <div class="flex flex-col justify-between gap-y-20 gap-x-5 md:flex-row md:items-start md:gap-4 lg:gap-0">
+          <div class="flex justify-around md:gap-28 lg:mr-[98px] lg:gap-0">
+            <div class="lg:mr-16">
+              <h4 class="mb-[22px] text-xl font-medium text-white">Home</h4>
+              <ul class="leading-[46px]">
+                <li><a href="/">Home</a></li>
+                <li><a href="#">Community</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </div>
+            <div class="text-right md:text-left">
+              <h4 class="mb-[22px] text-xl font-medium text-white">Resource</h4>
+              <ul class="leading-[46px]">
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Guides</a></li>
+                <li><a href="#">Help Center</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="flex justify-around md:gap-28 lg:gap-0">
+            <div class="lg:mr-[98px]">
+              <h4 class="mb-[22px] text-xl font-medium text-white">Community</h4>
+              <ul class="leading-[46px]">
+                <li><a href="#">NewsFeed</a></li>
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Friends</a></li>
+                <li><a href="#">Forums</a></li>
+              </ul>
+            </div>
+            <div class="text-right md:text-left">
+              <h4 class="mb-[22px] text-xl font-medium text-white">Main links</h4>
+              <ul class="leading-[46px]">
+                <li><a href="#">Members</a></li>
+                <li><a href="#">Activity</a></li>
+                <li><a href="#">Groups</a></li>
+                <li><a href="#">Privat Group</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col items-center md:block md:w-[339px]">
+          <h4 class="mb-4.5 w-full text-xl font-medium text-white lg:w-[179px]">Subscribe Cirkle Newsletter</h4>
+          <p class="mb-8 lg:w-[299px]">Subscribe to be the first one to know about updates. Enter your email</p>
+          <form action="" class="flex w-full flex-col gap-5 rounded-xl md:w-max md:flex-row md:gap-0 md:border md:border-white md:pl-6">
+            <input type="email" name="email" id="email" placeholder="Email Address" class="rounded-xl border border-white bg-transparent py-4 pl-6 outline-none placeholder:text-[#717179] md:border-none md:pl-0" />
+            <button type="submit" class="rounded-xl border border-white bg-white py-4 px-6 font-medium text-[#2B2B39] transition-all duration-300 hover:bg-transparent hover:text-white md:-ml-12 lg:-ml-6">Subscibe</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="bg-[#20202D]">
+        <div class="container flex flex-col items-center justify-between gap-8 py-30 px-5 md:flex-row lg:px-0">
+          <p class="text-sm text-[#F6F6F6]">Besnik Creative Agency.</p>
+          <div class="flex items-center gap-1.5">
+            <img src="./src/images/icon/logo.svg" alt="Netbook" />
+            <h1 class="text- font-poppins">Netbook</h1>
+          </div>
+          <div class="socials-label flex gap-2">
+            <a href="#" class="before:content-['Twitter']">
+              <img src="./src/images/icon/twitter.svg" alt="Twitter" />
+            </a>
+            <a href="#" class="before:content-['Instagram']">
+              <img src="./src/images/icon/instagram.svg" alt="Instagram" />
+            </a>
+            <a href="#" class="before:content-['Facebook']">
+              <img src="./src/images/icon/facebook.svg" alt="Facebook" />
+            </a>
+            <a href="#" class="before:content-['LinkedIn']">
+              <img src="./src/images/icon/linkedin.svg" alt="LinkedIn" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      const hamburgerMenu = document.getElementById('hamburger-menu');
+      const navMenu = document.getElementById('nav-menu');
+
+      hamburgerMenu.addEventListener('click', () => {
+        hamburgerMenu.classList.toggle('close');
+        navMenu.classList.toggle('hide-nav');
+        navMenu.classList.toggle('show-nav');
+      });
+    </script>
+  </body>
+</html>

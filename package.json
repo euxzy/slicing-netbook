@@ -1,0 +1,20 @@
+{
+  "name": "netbook",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npx live-server\" \"npx tailwindcss -i ./src/css/input.css -o ./src/css/styles.css --watch\""
+  },
+  "keywords": [],
+  "author": "euxzy",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^7.5.0",
+    "lite-server": "^2.6.1",
+    "live-server": "^1.2.2",
+    "prettier": "^2.7.1",
+    "prettier-plugin-tailwindcss": "^0.1.13",
+    "tailwindcss": "^3.2.4"
+  }
+}

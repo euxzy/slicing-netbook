@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-inter;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply rounded-[14px] py-6 px-[42px];
+  }
+  .li-before {
+    @apply relative mb-4 flex items-center pl-6 before:absolute before:left-0 before:block before:h-4.5 before:w-4.5 before:animate-pulse before:bg-[url('../images/icon/dot-icon.svg')] before:transition-all before:duration-1000 before:content-[''];
+  }
+  .line-before {
+    @apply before:absolute before:left-2 before:top-4.5 before:inline-block before:h-0.5 before:w-[39px] before:bg-[#FFAF2E] before:content-[''];
+  }
+  .hide-nav {
+    @apply -right-full opacity-0;
+  }
+  .show-nav {
+    @apply right-0 opacity-100;
+  }
+  #hamburger-menu > span {
+    @apply h-0.5 w-5 bg-navy transition-all duration-300;
+  }
+  .close > span:first-child,
+  .close > span:last-child {
+    @apply -rotate-45 opacity-50;
+  }
+  .close > span:nth-child(2) {
+    @apply rotate-45 opacity-50;
+  }
+  #nav-menu ul li {
+    @apply transition-all duration-300 hover:-translate-y-0.5 hover:text-[#2B2B39];
+  }
+  .community-card {
+    @apply flex cursor-default flex-col items-center gap-9 rounded-14 bg-white px-10 pt-10 pb-11 transition-all duration-300 hover:-translate-y-3 hover:shadow-xl lg:w-[522px] lg:flex-row lg:items-start;
+  }
+  .member-card {
+    @apply flex h-[316px] cursor-pointer items-center justify-center gap-4 rounded-14 p-30 shadow-[0_34px_68px_rgba(116,115,128,0.1)] transition-all duration-300 hover:-translate-y-4 hover:shadow-2xl md:w-270 md:flex-col md:gap-0;
+  }
+  #footer li {
+    @apply transition-all duration-300 hover:translate-x-2;
+  }
+  .socials-label a {
+    @apply relative flex h-9 w-9 items-center justify-center rounded-full bg-white transition-all duration-300 before:absolute before:-top-8 before:z-10 before:rounded-2xl before:bg-white before:px-4 before:py-1 before:text-xs before:font-bold before:text-[#20202D] before:opacity-0 before:transition-all before:duration-300 after:absolute after:inset-x-0 after:-top-5 after:z-0 after:mx-auto after:h-4 after:w-4 after:rotate-45 after:rounded-md after:bg-white after:opacity-0 after:transition-all after:duration-300 hover:bg-opacity-50 hover:before:opacity-100 hover:after:opacity-100;
+  }
+}
